@@ -1,0 +1,172 @@
+:root {
+    --navy: #F4F0F8;
+    --accent: #FFFFFF;
+    --gray: #7f8c8d;
+    --pastel: #F4F0F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0A0F22;
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent);
+}
+
+.card {
+    background: #1D2233;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bio-card {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.grid-2, .grid-4 {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.tools {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.tools i {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.cert-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#welcome-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(117, 60, 60, 0.95);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeInOut 5s forwards;
+    z-index: 1000;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .container { padding: 10px; }
+    h2 { font-size: 1.5rem; }
+}
+
+/* Previous styles remain the same */
+
+/* Add these new styles */
+.profile-photo-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--pastel);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3);
+    z-index: 1001;
+    border: none;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+}
+
+.job-description {
+    text-align: justify;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.job-description li {
+    margin-bottom: 8px;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.position {
+    color: var(--accent);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+}
