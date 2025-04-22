@@ -3,72 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Otabek Askarov – Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="welcome-message">Hello! Nice to have you here:) <br> This site is still work in progress...</div>
+    <!-- Welcome toast -->
     
-    <div class="container">
-        <!-- Profile Photo -->
-        <div class="profile-photo-container">
-            <img src="unnamed.jpg" alt="Profile Photo" class="profile-photo" id="profilePhoto">
+
+    <!-- Sticky navigation -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">OA</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-inner container">
+            <h1>Hi, I’m&nbsp;<span class="accent">Otabek Askarov</span></h1>
+            <h2 class="subtitle">Data Scientist&nbsp;&nbsp;|&nbsp;&nbsp;Data Analyst</h2>
+            <p class="tagline">Helping businesses unlock the full potential of their data.</p>
+            <a href="#projects" class="btn-primary">See my work</a>
         </div>
+    </section>
 
-        <!-- Bio Section -->
-        <section class="section">
-            <h2 align = "center">Otabek Askarov - Data Scientist - Data Analyst</h2>
-            <div class="card bio-card">
-                I am Otabek Askarov, a data professional with a passion for turning complex information into 
-                impactful business insights. With hands-on experience in analytics, ETL pipelines, and dashboard development, 
-                I bridge the gap between data science and strategic decision-making. I hold a Master’s in 
-                Data Science and a background in Finance, combining technical expertise with a strong business mindset. Fluent in 
-                four languages and skilled in tools like SQL, Python, Tableau, and AWS, I thrive in cross-functional, international 
-                environments. I'm always curious, always learning, and always ready to solve the next big challenge with clarity 
-                and precision. data analytics professional with a strong background in operations, marketing analytics, and data 
-                science. Experienced in Python, R, SQL, Tableau, and AWS. Passionate about building smart tools and solutions 
-                that drive business insights and simplify decision-making.
-            </div>
-            <div class="card bio-card">
-                Email: askarovosw@gmail.com <br>
-                Phone: +49 152 53058440 <br>
+    <!-- Main content container -->
+    <main class="container">
 
-                I speak English, German, Russian and my mother tongue Uzbek. 
-            
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section">
-            <h2>Education</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Bachelors</h3>
-                    <p class="university">Banger University</p>
-                    <p>Bachelor of Science in Finance, Investment and Risk</p>
+        <!-- About -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="profile-photo-container">
+                    <img src="unnamed.jpg" alt="Profile Photo" class="profile-photo" id="profilePhoto">
                 </div>
-                <div class="card">
-                    <h3>Masters</h3>
-                    <p class="university">European University of Viadrina</p>
-                    <p>IBA – Data Science Track</p>
+                <div class="card bio-card">
+                    <p>
+                        I’m Otabek Askarov, a data professional with a passion for turning complex information into
+                        impactful business insights. With hands‑on experience in analytics, ETL pipelines,
+                        and dashboard development, I bridge the gap between data science and strategic decision‑making.
+                        I hold a Master’s in Data Science and a background in Finance, combining technical expertise with a strong business mindset.
+                        Fluent in four languages and skilled in tools like SQL, Python, Tableau, and AWS,
+                        I thrive in cross‑functional, international environments. I’m always curious, always learning, and always ready
+                        to solve the next big challenge with clarity and precision.
+                    </p>
+                    <p>Email: <a href="mailto:askarovosw@gmail.com">askarovosw@gmail.com</a><br>
+                    Phone: +49 152 53058440<br>
+                    I speak English, German, Russian and my mother tongue Uzbek.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications Section -->
+        <!-- Education -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline horizontal">
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Bachelor of Science in Finance, Investment & Risk</h3>
+                        <p class="university">Bangor University</p>
+                        <span class="timeline-date">2014 – 2018</span>
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fa-solid fa-coins"></i>
+
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>MSc – Data Science</h3>
+                        <p class="university">European University Viadrina</p>
+                        <span class="timeline-date">2019 – 2021</span>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-table"></i>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-wand-sparkles"></i>
+                        <i class="fa-solid fa-file-excel"></i>
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
         <section class="section">
-            <h2>Certifications</h2>
+            <h2 class="section-title">Certifications</h2>
             <div class="grid-2">
                 <div class="card">
                     <h3>Google Data Analytics Professional Certificate</h3>
-                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/F2CRXHUH5P56" target="_blank" class="cert-link" style="color: blue; text-decoration: underline;">View on Coursera</a>
+                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/F2CRXHUH5P56" target="_blank" class="cert-link">View on Coursera</a>
                 </div>
                 <div class="card">
-                    <h3>Excel Fundamentals for Data Analysis
-                    </h3>
-                    <a href="https://www.coursera.org/account/accomplishments/records/QUKBFXUJERGB" target="_blank" class="cert-link" style="color: blue; text-decoration: underline;">View Certification</a>
+                    <h3>Excel Fundamentals for Data Analysis</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/records/QUKBFXUJERGB" target="_blank" class="cert-link">View Certification</a>
                 </div>
                 <div class="card">
                     <h3>Tableau Desktop / Online Expert</h3>
@@ -77,68 +113,75 @@
             </div>
         </section>
 
-        <!-- Professional Career Section -->
-        <section class="section">
-            <h2>Professional Experience</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>PGH EXPRESS LP</h3>
-                    <p class="position">Dispatch Operations Team Lead</p>
-                    <ul class="job-description">
-                        <li>Led daily dispatch operations, managing a fleet of drivers and coordinating logistics to ensure efficient load delivery and high service standards.</li>
-                        <li>Successfully booked freight loads generating over $1.5 million in gross revenue, optimizing routes and minimizing deadhead time.</li>
-                        <li>Built and maintained business relationships with more than 30 freight brokers, handling setup agreements and rate negotiations.</li>
-                        <li>Monitored and analyzed driver performance, providing guidance and support to maintain productivity and compliance.</li>
-                        <li>Played a key role in scaling business profitability through operational oversight and strategic load planning.</li>
-
-                    </ul>
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Dispatch Operations Team Lead</h3>
+                        <p class="company">PGH EXPRESS LP <span class="timeline-date">2021 – 2022</span></p>
+                        <ul class="job-description">
+                            <li>Led daily dispatch operations, managing a fleet of drivers and coordinating logistics to ensure efficient load delivery and high service standards.</li>
+                            <li>Successfully booked freight loads generating over $1.5 million in gross revenue, optimizing routes and minimizing deadhead time.</li>
+                            <li>Built and maintained relationships with 30+ freight brokers, handling setup agreements and rate negotiations.</li>
+                            <li>Monitored and analyzed driver performance, providing guidance and support to maintain productivity and compliance.</li>
+                            <li>Played a key role in scaling business profitability through operational oversight and strategic load planning.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>HAVI GLOBAL SOLUTIONS EUROPE GmbH</h3>
-                    <p class="position">Marketing Analytics</p>
-                    <ul class="job-description">
-                        <li>Developed and maintained ETL pipelines to ingest and clean market and sales data for analytics and dashboarding purposes.</li>
-                        <li>Migrated Tableau reports from server-based systems to Tableau Cloud, enhancing scalability and access for global teams.</li>
-                        <li>Created interactive dashboards using SQL, Power BI, and Tableau to visualize trends and drive data-informed decisions.</li>
-                        <li>Automated reporting workflows, reducing manual efforts and improving data availability for internal and external stakeholders.</li>
-                        <li>Collaborated cross-functionally to support insight generation and deliver presentations that translated complex data into actionable business value.</li>
-
-                    </ul>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3>Marketing Analytics Specialist</h3>
+                        <p class="company">HAVI Global Solutions Europe GmbH <span class="timeline-date">2023 – 2025</span></p>
+                        <ul class="job-description">
+                            <li>Developed and maintained ETL pipelines to ingest and clean market and sales data for analytics and dashboarding purposes.</li>
+                            <li>Migrated Tableau reports from server‑based systems to Tableau Cloud, enhancing scalability and access for global teams.</li>
+                            <li>Created interactive dashboards using SQL, Power BI, and Tableau to visualize trends and drive data‑informed decisions.</li>
+                            <li>Automated reporting workflows, reducing manual efforts and improving data availability for stakeholders.</li>
+                            <li>Collaborated cross‑functionally to support insight generation and deliver presentations that translated complex data into actionable business value.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="section">
-            <h2>Projects</h2>
-            <div class="grid-4">
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Filter controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+
+            <div class="grid-4 project-grid">
                 <!-- Project 1 -->
-                <div class="card project-card">
-                    <h3>Risk Adjusted Credit Pricing Dashboard</h3>
-                    <p>Training Cost Sensitive Classification Models like XGBoost, LightGBM and Logistic Regression. Using the probabilites given by models to better predict Credit Risk Default and assign better credit prices.</p>
+                <div class="card project-card" data-category="ml">
+                    <h3>Risk‑Adjusted Credit Pricing Dashboard</h3>
+                    <p>Trained cost‑sensitive models (XGBoost, LightGBM, Logistic Regression) to better predict credit risk and assign prices.</p>
                     <div class="tools">
                         <i class="fab fa-python"></i>
                         <i class="fas fa-database"></i>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <a href="https://otabekaskarov.github.io/credit_calculator" target="_blank" class="cert-link" style="color: blue; text-decoration: underline;">
-  Visit Project Website
-</a>
+                    <a href="https://otabekaskarov.github.io/credit_calculator" target="_blank" class="cert-link">Visit Project Website</a>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="card project-card">
-                    <h3>Neural Networks – Synthetic Credit Risk Data</h3>
-                    <p>Used neural networks (Keras, TensorFlow) to generate synthetic credit risk data.</p>
+                <div class="card project-card" data-category="ml">
+                    <h3>Synthetic Credit Risk Data Generation</h3>
+                    <p>Used neural networks (Keras, TensorFlow) to generate synthetic credit‑risk data.</p>
                     <div class="tools">
                         <i class="fab fa-r-project"></i>
                         <i class="fas fa-brain"></i>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="card project-card">
-                    <h3>SharePoint HUB – McDonald's Happy Meal Menu</h3>
+                <div class="card project-card" data-category="automation">
+                    <h3>SharePoint HUB – Happy Meal Menu</h3>
                     <p>Built a SharePoint portal with PowerAutomate integration for workflow automation.</p>
                     <div class="tools">
                         <i class="fab fa-microsoft"></i>
@@ -146,10 +189,9 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="card project-card">
+                <div class="card project-card" data-category="dashboard">
                     <h3>Tableau Report Generator</h3>
-                    <p>Dashboard for generating and exporting reports directly via Tableau Server.</p>
+                    <p>Dashboard for generating and exporting reports directly via Tableau Server.</p>
                     <div class="tools">
                         <i class="fas fa-chart-line"></i>
                         <i class="fas fa-file-export"></i>
@@ -157,7 +199,29 @@
                 </div>
             </div>
         </section>
-    </div>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Let’s Work Together</h2>
+            <form action="https://formspree.io/f/xgvkeazz" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" rows="6" placeholder="Tell me about your project…" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© <span id="year"></span> Otabek Askarov</p>
+        <div class="social-links">
+            <a href="https://github.com/otabekaskarov" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/otabek-askarov/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
